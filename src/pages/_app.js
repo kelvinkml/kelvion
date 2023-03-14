@@ -9,22 +9,20 @@ export default function App({ Component, pageProps }) {
     let rows = Math.floor(document.body.clientHeight / 50);
 
     const colours = [
-      "rgb(100, 100, 100)",
+      "rgb(170, 170, 170)",
       "rgb(255, 255, 255)",
-      "rgb(100, 100, 100)",
+      "rgb(170, 170, 170)",
       "rgb(255, 255, 255)",
-      "rgb(100, 100, 100)",
+      "rgb(170, 170, 170)",
       "rgb(255, 255, 255)",
     ];
-    let count = -1;
 
-    const handleOnClick = (index) => {
-      count = count + 1;
+    const handleOnMouseOver = (index) => {
       document.getElementById("tiles").style.zIndex = "0";
       anime({
         targets: ".tile",
         backgroundColor: colours[index % (colours.length - 1)],
-        delay: anime.stagger(100, {
+        delay: anime.stagger(170, {
           grid: [columns, rows],
           from: index,
         }),
@@ -34,7 +32,7 @@ export default function App({ Component, pageProps }) {
     const createTile = (index) => {
       const tile = document.createElement("div");
       tile.classList.add("tile");
-      tile.onmouseover = (e) => handleOnClick(index);
+      tile.onmouseover = (e) => handleOnMouseOver(index);
       return tile;
     };
 
