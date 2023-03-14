@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+
+.container {
+  height: 95%;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.75fr 0.75fr 0.75fr 0.75fr 0.75fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . . . . links"
+    "navigation . . . . . . ."
+    ". . . title title . . ."
+    ". . . . aboutMe aboutMe aboutMe aboutMe"
+    ". . . . aboutMe aboutMe aboutMe aboutMe";
+}
+.links {
+  grid-area: links;
+  grid-auto-flow: column;
+}
+.title {
+  grid-area: title;
+}
+.aboutMe {
+  grid-area: aboutMe;
+}
