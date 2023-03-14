@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Projects.module.css";
 import { Navigation } from "../../components/Navigation";
@@ -22,7 +22,7 @@ export default function Home() {
         <div className={styles.projects}>
           <div className={styles.projectCard}>
             <div className={styles.projectTitles}>
-              <text>Swapz</text>
+              <Link href="/swapz">Swapz</Link>
             </div>
             <text className={styles.projectBody}>
               Built in React Native, Swaps is a mobile app that allows users to
