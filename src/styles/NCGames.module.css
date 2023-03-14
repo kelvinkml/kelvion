@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+
+.container {
+  height: 95%;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.75fr 0.75fr 0.75fr 0.75fr 0.75fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . . . . gitHub"
+    "navigation . projectTitle projectTitle . . . ."
+    ". . image1 image1 image2   . projectInfo projectInfo"
+    ". . image1 image1 image2   . projectInfo projectInfo"
+    ". . . . . . projectInfo projectInfo";
+}
+.projectTitle {
+  grid-area: projectTitle;
+  font-size: 1.6rem;
+}
+.titleText {
+  align-self: center;
+}
+.images {
+  height: 220px;
+  width: auto;
+}
+.image1 {
+  grid-area: image1;
+}
+.image2 {
+  grid-area: image2;
+}
+.projectInfo {
+  grid-area: projectInfo;
+}
+.gitHub {
+  grid-area: gitHub;
+  text-align: left;
+}

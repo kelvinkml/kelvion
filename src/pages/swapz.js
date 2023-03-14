@@ -3,9 +3,9 @@ import { Header } from "../../components/Header";
 import { Navigation } from "../../components/Navigation";
 import styles from "@/styles/Swapz.module.css";
 import Image from "next/image";
-import swapz1 from "../../swapz1.png";
-import swapz2 from "../../swapz2.png";
-import swapz3 from "../../swapz3.png";
+import swapz1 from "../../images/swapz1.png";
+import swapz2 from "../../images/swapz2.png";
+import swapz3 from "../../images/swapz3.png";
 import Link from "next/link";
 export default function Home() {
   return (

@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <div className={styles.projectCard}>
             <div className={styles.projectTitles}>
-              <text>NC Games</text>
+              <Link href="/NCgames">NC Games</Link>
             </div>
             <text className={styles.projectBody}>
               A full stack exercise building my own API (using Express) and then

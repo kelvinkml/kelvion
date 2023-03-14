@@ -31,7 +31,7 @@ export default function Home() {
             bringing the same principles to web design and software development.
             Clean aesthetics and where framing is key. A picture tells a
             thousand words and a website can host millions.<br></br>
-            <br></br> Lets tell a story.
+            <br></br>
           </text>
         </div>
       </div>
