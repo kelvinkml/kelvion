@@ -29,6 +29,8 @@
 }
 
 .navigation {
+  background-color: white;
+  z-index: 1;
   grid-area: navigation;
   padding: 1rem;
   border-width: 1px;

@@ -17,11 +17,15 @@
 }
 .projects {
   grid-area: projects;
+  z-index: 1;
+  pointer-events: none;
 }
 .projectCard {
   margin-bottom: 40px;
 }
 .projectTitles {
+  pointer-events: auto;
+  z-index: 0;
   font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 10px;

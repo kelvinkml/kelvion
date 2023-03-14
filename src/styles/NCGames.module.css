@@ -27,15 +27,18 @@
   width: auto;
 }
 .image1 {
+  z-index: 1;
   grid-area: image1;
 }
 .image2 {
+  z-index: 1;
   grid-area: image2;
 }
 .projectInfo {
   grid-area: projectInfo;
 }
 .gitHub {
+  z-index: 1;
   grid-area: gitHub;
   text-align: left;
 }
