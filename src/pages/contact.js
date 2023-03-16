@@ -28,7 +28,7 @@ export default function Home() {
           </text>
         </div>
         <div className={styles.CTA}>
-          <Link href="mailto:kelvinkml@live.com">Don't be shy!</Link>
+          <Link href="mailto:kelvinkml@live.com">Don&apos;t be shy!</Link>
         </div>
       </div>
     </>

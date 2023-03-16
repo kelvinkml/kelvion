@@ -31,13 +31,25 @@ export default function Home() {
           <h2 className={styles.titleText}>Swapz</h2>
         </div>
         <div className={styles.image1}>
-          <Image className={styles.images} src={swapz1} />
+          <Image
+            alt="screenshot of mobile app"
+            className={styles.images}
+            src={swapz1}
+          />
         </div>
         <div className={styles.image2}>
-          <Image className={styles.images} src={swapz2} />
+          <Image
+            alt="screenshot of mobile app"
+            className={styles.images}
+            src={swapz2}
+          />
         </div>
         <div className={styles.image3}>
-          <Image className={styles.images} src={swapz3} />
+          <Image
+            alt="screenshot of mobile app"
+            className={styles.images}
+            src={swapz3}
+          />
         </div>
         <div className={styles.projectInfo}>
           <text>
