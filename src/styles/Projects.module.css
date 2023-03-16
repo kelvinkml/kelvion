@@ -25,11 +25,15 @@
   margin-bottom: 40px;
 }
 .projectTitles {
+  height: 40px;
+  box-sizing: border-box;
   pointer-events: auto;
   z-index: 0;
   font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 10px;
+  transition: 0.2s;
 }
-/* .projectBody {
-} */
+.projectTitles:hover {
+  font-size: 1.8rem;
+}

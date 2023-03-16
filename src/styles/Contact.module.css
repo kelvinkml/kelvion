@@ -22,4 +22,8 @@
 .CTA {
   grid-area: CTA;
   z-index: 1;
+  transition: 0.2s;
+}
+.CTA:hover {
+  font-size: large;
 }

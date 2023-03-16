@@ -26,6 +26,10 @@
 .images {
   height: 220px;
   width: auto;
+  transition: transform 0.2s;
+}
+.images:hover {
+  transform: scale(1.75);
 }
 .image1 {
   z-index: 1;
