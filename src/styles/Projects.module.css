@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
 
 .container {
+  box-sizing: border-box;
   height: 95%;
   margin: 1rem;
   display: grid;

@@ -5,6 +5,8 @@ import anime from "animejs";
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     const wrapper = document.getElementById("tiles");
+    // let columns = Math.floor(window.innerWidth / 50);
+    // let rows = Math.floor(window.innerHeight / 50);
     let columns = Math.floor(document.body.clientWidth / 50);
     let rows = Math.floor(document.body.clientHeight / 50);
 
@@ -22,7 +24,7 @@ export default function App({ Component, pageProps }) {
       anime({
         targets: ".tile",
         backgroundColor: colours[index % (colours.length - 1)],
-        delay: anime.stagger(170, {
+        delay: anime.stagger(window.innerWidth > 1200 ? 100 : 150, {
           grid: [columns, rows],
           from: index,
         }),
@@ -44,6 +46,8 @@ export default function App({ Component, pageProps }) {
 
     const createGrid = () => {
       wrapper.innerHTML = "";
+      // columns = Math.floor(window.innerWidth / 50);
+      // rows = Math.floor(window.innerHeight / 50);
       columns = Math.floor(document.body.clientWidth / 50);
       rows = Math.floor(document.body.clientHeight / 50);
       wrapper.style.setProperty("--columns", columns);
