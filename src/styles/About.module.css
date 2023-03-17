@@ -26,3 +26,6 @@
 .aboutMe {
   grid-area: aboutMe;
 }
+.socialsLink {
+  z-index: 2;
+}
