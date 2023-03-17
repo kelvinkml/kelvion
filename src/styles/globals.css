@@ -11,8 +11,8 @@
 html,
 body {
   width: 100vw;
-  /* height: 95%; */
-  overflow-x: hidden;
+  height: 100%;
+  /* overflow-x: hidden; */
 }
 a {
   color: inherit;
