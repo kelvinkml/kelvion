@@ -1,20 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
 
-.container {
-  box-sizing: border-box;
-  height: 95%;
-  margin: 1rem;
+@media (max-width: 500px) {
+  .container {
+    box-sizing: border-box;
+    height: 95%;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      "navigation navigation"
+      ". ."
+      ". ."
+      "projectTitle ."
+      ". ."
+      "projectInfo projectInfo"
+      ". ."
+      "imageHolder imageHolder"
+      ". ."
+      "gitHub .";
+  }
+}
+
+@media (min-width: 500px) {
+  .container {
+    box-sizing: border-box;
+    height: 95%;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.75fr 0.75fr 0.75fr 0.75fr 0.75fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . . gitHub"
+      "navigation . projectTitle . . . . ."
+      ". . imageHolder imageHolder imageHolder  . projectInfo projectInfo"
+      ". . imageHolder imageHolder imageHolder  . projectInfo projectInfo"
+      ". . . . . . projectInfo projectInfo";
+  }
+  .images:hover {
+    transform: scale(1.75);
+  }
+  .gitHub:hover {
+    font-size: large;
+  }
+}
+.imageHolder {
+  grid-area: imageHolder;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.75fr 0.75fr 0.75fr 0.75fr 0.75fr;
-  gap: 5px 5px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". . . . . . . gitHub"
-    "navigation . projectTitle . . . . ."
-    ". . image1 image2 image3  . projectInfo projectInfo"
-    ". . image1 image2 image3  . projectInfo projectInfo"
-    ". . . . . . projectInfo projectInfo";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "image1 image2 image3";
+  align-self: center;
 }
 .projectTitle {
   grid-area: projectTitle;
@@ -29,9 +66,7 @@
   height: auto;
   transition: transform 0.2s;
 }
-.images:hover {
-  transform: scale(1.75);
-}
+
 .image1 {
   z-index: 1;
   grid-area: image1;
@@ -52,7 +87,4 @@
   grid-area: gitHub;
   text-align: left;
   transition: 0.2s;
-}
-.gitHub:hover {
-  font-size: large;
 }

@@ -30,26 +30,28 @@ export default function Home() {
         <div className={styles.projectTitle}>
           <h2 className={styles.titleText}>Swapz</h2>
         </div>
-        <div className={styles.image1}>
-          <Image
-            alt="screenshot of mobile app"
-            className={styles.images}
-            src={swapz1}
-          />
-        </div>
-        <div className={styles.image2}>
-          <Image
-            alt="screenshot of mobile app"
-            className={styles.images}
-            src={swapz2}
-          />
-        </div>
-        <div className={styles.image3}>
-          <Image
-            alt="screenshot of mobile app"
-            className={styles.images}
-            src={swapz3}
-          />
+        <div className={styles.imageHolder}>
+          <div className={styles.image1}>
+            <Image
+              alt="screenshot of mobile app"
+              className={styles.images}
+              src={swapz1}
+            />
+          </div>
+          <div className={styles.image2}>
+            <Image
+              alt="screenshot of mobile app"
+              className={styles.images}
+              src={swapz2}
+            />
+          </div>
+          <div className={styles.image3}>
+            <Image
+              alt="screenshot of mobile app"
+              className={styles.images}
+              src={swapz3}
+            />
+          </div>
         </div>
         <div className={styles.projectInfo}>
           <text>

@@ -34,6 +34,9 @@ export default function Home() {
             <br></br>
           </text>
         </div>
+        <text className={styles.mobileMessage}>
+          Tap the screen, see what happens...
+        </text>
       </div>
     </>
   );

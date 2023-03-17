@@ -12,36 +12,82 @@
   color: rgb(0, 0, 0);
   font-size: 1rem;
 }
-.container {
-  box-sizing: border-box;
-  height: 95%;
-  margin: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.75fr 0.75fr 0.75fr 0.75fr 0.75fr;
-  gap: 5px 5px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". . . . . . . ."
-    "navigation . . . . . . ."
-    ". titles titles titles . . homepageInfo homepageInfo"
-    ". . . . . . homepageInfo homepageInfo"
-    ". . . . . . homepageInfo homepageInfo";
-}
 
-.navigation {
-  background-color: white;
-  z-index: 1;
-  grid-area: navigation;
-  padding: 1rem;
-  border-width: 1px;
-  border-color: rgb(0, 0, 0);
-  border-style: solid;
-  width: 150px;
-  height: 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+@media (max-width: 500px) {
+  .container {
+    box-sizing: border-box;
+    height: 95%;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      "navigation navigation"
+      ". . "
+      "titles titles"
+      ". . "
+      "homepageInfo homepageInfo"
+      "homepageInfo homepageInfo"
+      "homepageInfo homepageInfo"
+      ". . "
+      ". . "
+      ". . "
+      "mobileMessage mobileMessage";
+  }
+  .navigation {
+    background-color: white;
+    z-index: 1;
+    grid-area: navigation;
+    padding: 0.75rem;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .mobileMessage {
+    font-size: small;
+    align-self: center;
+    grid-area: mobileMessage;
+    z-index: -1;
+  }
+}
+@media (min-width: 500px) {
+  .container {
+    box-sizing: border-box;
+    height: 95%;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.75fr 0.75fr 0.75fr 0.75fr 0.75fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . . ."
+      "navigation . . . . . . ."
+      ". titles titles titles . . homepageInfo homepageInfo"
+      ". . . . . . homepageInfo homepageInfo"
+      ". . . . . . homepageInfo homepageInfo";
+  }
+  .navigation {
+    background-color: white;
+    z-index: 1;
+    grid-area: navigation;
+    padding: 1rem;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    width: 150px;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .mobileMessage {
+    display: none;
+  }
 }
 
 .titles {

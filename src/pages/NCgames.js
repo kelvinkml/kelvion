@@ -38,19 +38,21 @@ export default function Home() {
         <div className={styles.projectTitle}>
           <h2 className={styles.titleText}>NC Games</h2>
         </div>
-        <div className={styles.image1}>
-          <Image
-            alt="screenshot of website"
-            className={styles.images}
-            src={ncgames1}
-          />
-        </div>
-        <div className={styles.image2}>
-          <Image
-            alt="screenshot of website, mobile"
-            className={styles.images}
-            src={ncgames2}
-          />
+        <div className={styles.imageHolder}>
+          <div className={styles.image1}>
+            <Image
+              alt="screenshot of website"
+              className={styles.images}
+              src={ncgames1}
+            />
+          </div>
+          <div className={styles.image2}>
+            <Image
+              alt="screenshot of website, mobile"
+              className={styles.images}
+              src={ncgames2}
+            />
+          </div>
         </div>
         <div className={styles.projectInfo}>
           <text>
