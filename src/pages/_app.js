@@ -18,12 +18,13 @@ export default function App({ Component, pageProps }) {
       "rgb(170, 170, 170)",
       "rgb(255, 255, 255)",
     ];
-
+    let count = 1;
     const handleOnMouseOver = (index) => {
       document.getElementById("tiles").style.zIndex = "0";
+      count++;
       anime({
         targets: ".tile",
-        backgroundColor: colours[index % (colours.length - 1)],
+        backgroundColor: colours[count % (colours.length - 1)],
         delay: anime.stagger(window.innerWidth > 1200 ? 100 : 150, {
           grid: [columns, rows],
           from: index,
@@ -57,6 +58,7 @@ export default function App({ Component, pageProps }) {
     };
     createGrid();
     window.onresize = () => createGrid();
+    handleOnMouseOver(1);
   }, []);
 
   return (
