@@ -19,6 +19,7 @@
 .links {
   grid-area: links;
   grid-auto-flow: column;
+  z-index: 1;
 }
 .title {
   grid-area: title;
@@ -27,5 +28,9 @@
   grid-area: aboutMe;
 }
 .socialsLink {
-  z-index: 2;
+  z-index: 1;
+  transition: 0.2s;
+}
+.socialsLink:hover {
+  font-size: large;
 }
