@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <Header />
       <div className={styles.container}>
-        <div className={styles.gitHub}>
+        <div className={styles.links}>
           <Link
             className={styles.gitHub}
             href={"https://github.com/kelvinkml/nc-games-react"}
@@ -28,7 +28,7 @@ export default function Home() {
           </Link>
           <br></br>
           <Link
-            className={styles.gitHub}
+            className={styles.liveSite}
             href={"https://shiny-pithivier-e2b325.netlify.app/"}
           >
             Live site

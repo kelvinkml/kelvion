@@ -51,4 +51,8 @@
   z-index: 1;
   grid-area: gitHub;
   text-align: left;
+  transition: 0.2s;
+}
+.gitHub:hover {
+  font-size: large;
 }

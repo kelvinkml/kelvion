@@ -6,9 +6,9 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     const wrapper = document.getElementById("tiles");
     // let columns = Math.floor(window.innerWidth / 50);
-    // let rows = Math.floor(window.innerHeight / 50);
+    let rows = Math.floor(window.innerHeight / 50);
     let columns = Math.floor(document.body.clientWidth / 50);
-    let rows = Math.floor(document.body.clientHeight / 50);
+    // let rows = Math.floor(document.body.clientHeight / 50);
 
     const colours = [
       "rgb(170, 170, 170)",
@@ -47,9 +47,9 @@ export default function App({ Component, pageProps }) {
     const createGrid = () => {
       wrapper.innerHTML = "";
       // columns = Math.floor(window.innerWidth / 50);
-      // rows = Math.floor(window.innerHeight / 50);
+      rows = Math.floor(window.innerHeight / 50);
       columns = Math.floor(document.body.clientWidth / 50);
-      rows = Math.floor(document.body.clientHeight / 50);
+      // rows = Math.floor(document.body.clientHeight / 50);
       wrapper.style.setProperty("--columns", columns);
       wrapper.style.setProperty("--rows", rows);
 

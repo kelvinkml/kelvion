@@ -23,7 +23,7 @@ export default function Home() {
             className={styles.gitHub}
             href={"https://github.com/kelvinkml/swapz"}
           >
-            GitHub repo
+            GitHub
           </Link>
         </div>
         <Navigation />
