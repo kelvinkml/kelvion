@@ -34,11 +34,11 @@ export default function Home() {
           </div>
           <div className={styles.projectCard}>
             <div className={styles.projectTitles}>
-              <Link href="/NCgames">NC Games</Link>
+              <Link href="/Board">Board?</Link>
             </div>
             <text className={styles.projectBody}>
-              A full stack exercise building my own API (using Express) and then
-              a front end (React.js){" "}
+              A full stack exercise building my own API (using Express) and a
+              front end (React.js){" "}
             </text>
           </div>
         </div>

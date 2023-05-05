@@ -5,8 +5,8 @@ import { Navigation } from "../../components/Navigation";
 import styles from "@/styles/NCGames.module.css";
 import Image from "next/image";
 
-import ncgames1 from "../../images/ncgames1.png";
-import ncgames2 from "../../images/ncgames2.png";
+import board1 from "../../images/board1.png";
+import board2 from "../../images/board2.png";
 
 export default function Home() {
   return (
@@ -39,31 +39,24 @@ export default function Home() {
         </div>
         <Navigation />
         <div className={styles.projectTitle}>
-          <h2 className={styles.titleText}>NC Games</h2>
+          <h2 className={styles.titleText}>Board?</h2>
         </div>
         <div className={styles.imageHolder}>
           <div className={styles.image1}>
             <Image
               alt="screenshot of website"
               className={styles.images}
-              src={ncgames1}
-            />
-          </div>
-          <div className={styles.image2}>
-            <Image
-              alt="screenshot of website, mobile"
-              className={styles.images}
-              src={ncgames2}
+              src={board1}
             />
           </div>
         </div>
         <div className={styles.projectInfo}>
           <text>
-            NC Games is a full stack project built from scratch, using Test
-            Driven Development (Jest). I started with making an API (Express.js)
-            to interact with a seeded database (PostgreSQL) making sure to
-            handle errors with custom error messages with Promises and .catch
-            blocks.<br></br>
+            Board? is a full stack project built from scratch, using Test Driven
+            Development (Jest). I started with making an API (Express.js) to
+            interact with a seeded database (PostgreSQL) making sure to handle
+            errors with custom error messages with Promises and .catch blocks.
+            <br></br>
             <br></br>Using React as a framework for the front-end making use of
             re-usable components and a mobile first approach to the design of
             the site.
