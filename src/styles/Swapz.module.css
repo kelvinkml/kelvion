@@ -42,6 +42,15 @@
   .images:hover {
     transform: scale(1.75);
   }
+  .image1:hover {
+    z-index: 5;
+  }
+  .image2:hover {
+    z-index: 5;
+  }
+  .image3:hover {
+    z-index: 5;
+  }
   .gitHub:hover {
     font-size: large;
   }
