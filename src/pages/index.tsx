@@ -1,11 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import { Navigation } from "../../components/Navigation";
-import { Header } from "../../components/Header";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Navigation } from "@/components/Navigation";
+import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
@@ -27,19 +23,22 @@ export default function Home() {
           <h2 id={styles.photographer}>Photographer</h2>
         </div>
         <div className={styles.homepageInfo}>
-          <text>
-            Kelvin Miles Leeming, born in Preston, England and currently living
-            in the city of the North, Manchester. <br></br>
-            <br></br>With a background in photography and image making I’m
-            bringing the same principles to web design and software development.
-            Clean aesthetics and where framing is key. A picture tells a
-            thousand words and a website can host millions.<br></br>
+          <p>
+            Kelvin Miles Leeming — born in Preston, now based in Todmorden, a
+            small town wedged in the hills between Manchester and Leeds.<br></br>
             <br></br>
-          </text>
+            By day I work as a UCaaS faults specialist, diagnosing issues in
+            cloud communications infrastructure. The rest of the time I build
+            things for the web.<br></br>
+            <br></br>
+            A Photography BA taught me to care about what&apos;s in the frame
+            and what isn&apos;t. That instinct follows me into every line of
+            code.
+          </p>
         </div>
-        <text className={styles.mobileMessage}>
+        <p className={styles.mobileMessage}>
           Tap the screen, see what happens...
-        </text>
+        </p>
       </div>
     </>
   );

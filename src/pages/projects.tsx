@@ -1,13 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Projects.module.css";
-import { Navigation } from "../../components/Navigation";
-import { Header } from "../../components/Header";
+import { Navigation } from "@/components/Navigation";
+import { Header } from "@/components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function Projects() {
   return (
     <>
       <Head>
@@ -27,19 +24,27 @@ export default function Home() {
             <div className={styles.projectTitles}>
               <Link href="/swapz">Swapz</Link>
             </div>
-            <text className={styles.projectBody}>
-              Built in React Native, Swaps is a mobile app that allows users to
-              trade or barter their old (or new) items without the use of money.
-            </text>
+            <p className={styles.projectBody}>
+              A mobile app for trading items locally — no money, no shipping.
+              Built with React Native, Expo, and Firebase.
+            </p>
           </div>
           <div className={styles.projectCard}>
             <div className={styles.projectTitles}>
               <Link href="/Board">Board?</Link>
             </div>
-            <text className={styles.projectBody}>
-              A full stack exercise building my own API (using Express) and a
-              front end (React.js){" "}
-            </text>
+            <p className={styles.projectBody}>
+              Full stack from scratch — a REST API in Express.js backed by
+              PostgreSQL, with a React front end consuming it.
+            </p>
+          </div>
+          <div className={styles.projectCard}>
+            <div className={styles.projectTitles}>
+              <Link href="/coming-soon">Coming Soon</Link>
+            </div>
+            <p className={styles.projectBody}>
+              Projects currently in progress or on the horizon.
+            </p>
           </div>
         </div>
       </div>

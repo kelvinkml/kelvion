@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .container {
     box-sizing: border-box;
     height: 95%;
@@ -21,7 +21,7 @@
       ". .";
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .container {
     box-sizing: border-box;
     height: 95%;

@@ -1,13 +1,14 @@
 import Head from "next/head";
-import { Header } from "../../components/Header";
-import { Navigation } from "../../components/Navigation";
+import { Header } from "@/components/Header";
+import { Navigation } from "@/components/Navigation";
 import styles from "@/styles/Swapz.module.css";
 import Image from "next/image";
-import swapz1 from "../../images/swapz1.png";
-import swapz2 from "../../images/swapz2.png";
-import swapz3 from "../../images/swapz3.png";
+import swapz1 from "@/images/swapz1.png";
+import swapz2 from "@/images/swapz2.png";
+import swapz3 from "@/images/swapz3.png";
 import Link from "next/link";
-export default function Home() {
+
+export default function Swapz() {
   return (
     <>
       <Head>
@@ -57,17 +58,15 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.projectInfo}>
-          <text>
-            Swapz is a creative platform that allows people to swap their own
-            items at no extra cost with others in their local area, helping to
-            reduce waste and promote a more sustainable way of living. Swapz is
-            designed to be easy to use and navigate, making it accessible to
-            people of all ages and backgrounds. <br></br>
+          <p>
+            Swapz lets people trade items locally — no money, no shipping, no
+            waste. The idea: swap what you have for what you need, with people
+            nearby.<br></br>
             <br></br>
-            Built using React Native and Expo for the front-end and Firebase for
-            all the back-end including user authentication, image hosting,
-            database storage and API calls.
-          </text>
+            Built with React Native and Expo for the front-end. Firebase handles
+            everything on the back-end: user authentication, image hosting,
+            database storage, and API calls.
+          </p>
         </div>
       </div>
     </>
