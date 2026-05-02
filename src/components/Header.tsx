@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../logo.png";
+import logo from "@/images/logo.png";
 import styles from "@/styles/Home.module.css";
 
 export const Header = () => {
